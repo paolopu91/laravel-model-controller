@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// created controller route 
+Route::get('/', "HomeController@index")->name("home.index");
